@@ -1,0 +1,59 @@
+<head>
+    <meta charset="utf-8">
+    <title>Angular Application Real-Time</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+  <body>
+    
+ 
+<div class="container-fluid">
+    <div class="row">
+    <div class="jumbotron col-sm-2 p-2 m-0 my-5 bg-white"></div>
+    <div class="jumbotron col-sm-8 p-2 m-0 bg-secondary my-5">
+      <h2 class="text-center"> Calculator </h2>
+     
+      <div class="form-group">
+        <label for="usr"> Results</label>
+        <div class="form-control" type="text">{{input}}</div>
+      </div>
+      <!-- <div class="form-group">
+        <label for="pwd">Results</label>
+        <div class="form-control" type="text">{{result}}</div>
+      </div> -->
+      <div class="col-sm-12 p-1 m-0 ">
+        <button class="btn btn-info col-sm-6 " type="button" (click)="allClear()">C</button>
+        <button class="btn btn-danger col-sm-3" type="button" (click)="clear()">x</button>
+        <button class="btn btn-warning col-sm-3" type="button" (click)="pressOperator('/')">/</button>
+      </div>
+      <div class="col-sm-12 p-1 m-0">
+        <button class="btn btn-primary col-sm-3 p-1 " type="button" (click)="pressNum('7')">7</button>
+        <button class="btn btn-primary col-sm-3 p-1" type="button" (click)="pressNum('8')">8</button>
+        <button class="btn btn-primary col-sm-3 p-1" type="button" (click)="pressNum('9')">9</button>
+        <button class="btn btn-warning col-sm-3 p-1" type="button" (click)="pressOperator('*')">X</button>
+      </div>
+      <div class="col-sm-12 p-1 m-0">
+        <button class="btn btn-primary col-sm-3 p-1" type="button" (click)="pressNum('4')">4</button>
+        <button class="btn btn-primary col-sm-3 p-1" type="button" (click)="pressNum('5')">5</button>
+        <button class="btn btn-primary col-sm-3 p-1" type="button" (click)="pressNum('6')">6</button>
+        <button class="btn btn-warning col-sm-3 p-1" type="button" (click)="pressOperator('-')">-</button>
+      </div>
+      <div class="col-sm-12 p-1 m-0">
+        <button class="btn btn-primary col-sm-3 p-1" type="button" (click)="pressNum('1')">1</button>
+        <button class="btn btn-primary col-sm-3 p-1" type="button" (click)="pressNum('2')">2</button>
+        <button class="btn btn-primary col-sm-3 p-1" type="button" (click)="pressNum('3')">3</button>
+        <button class="btn btn-warning col-sm-3 p-1" type="button" (click)="pressOperator('+')">+</button>
+      </div>
+      <div class="col-sm-12 p-1 m-0">
+        <button class="btn btn-primary col-sm-3 p-1" type="button" (click)="pressNum('.')">.</button>
+        <button class="btn btn-primary col-sm-3 p-1" type="button" (click)="pressNum('0')">0</button>
+        <button class="btn btn-lg btn-success col-sm-6 p-1" type="button" (click)="getAnswer()">=</button>
+      </div>
+    </div>
+    <div class="jumbotron col-sm-2 p-2 m-0 my-5 bg-white"></div>
+</div>
+
+    </div>
+</body>
